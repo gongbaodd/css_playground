@@ -1,3 +1,16 @@
+<script lang="ts">
+  import { onMount } from "svelte";
+  import { writable } from "svelte/store";
+
+  import Counter from "../components/Counter.svelte";
+
+  const count = writable(100);
+
+  onMount(() => {
+    console.log("App mounted");
+  });
+</script>
+
 <style>
   h1,
   figure,
@@ -35,10 +48,10 @@
 </style>
 
 <svelte:head>
-  <title>HoHoHo</title>
+  <title>Sapper project template</title>
 </svelte:head>
 
-<h1>YoHo!</h1>
+<h1>Great success!</h1>
 
 <figure>
   <img alt="Borat" src="great-success.png" />
@@ -46,7 +59,12 @@
 </figure>
 
 <p>
-  <strong>
-    Try editing this file (src/routes/index.svelte) to test live reloading.
-  </strong>
+  <strong>Try editing this file (src/routes/index.svelte) to test live
+    reloading.</strong>
+</p>
+
+<p>
+  <Counter />
+  <Counter value={1}>Counter 1</Counter>
+  <Counter value={$count} step={3}>Counter 2</Counter>
 </p>
