@@ -3,9 +3,11 @@
   "description": "CSS playground",
   "version": "0.0.1",
   "dependencies": {
+    "bulma": "^0.8.1",
     "compression": "1.7.4",
     "polka": "next",
-    "sirv": "0.4.2"
+    "sirv": "0.4.2",
+    "svelte-bulma-components": "^0.1.5"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",

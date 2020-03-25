@@ -1208,6 +1208,11 @@ builtin-modules@^3.1.0:
   resolved "https://registry.npm.taobao.org/builtin-modules/download/builtin-modules-3.1.0.tgz#aad97c15131eb76b65b50ef208e7584cd76a7484"
   integrity sha1-qtl8FRMet2tltQ7yCOdYTNdqdIQ=
 
+bulma@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.npm.taobao.org/bulma/download/bulma-0.8.1.tgz#a5feacb703b73a87fdeae4f0d12317d62fc1d301"
+  integrity sha1-pf6stwO3Oof96uTw0SMX1i/B0wE=
+
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/bytes/download/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
@@ -4569,6 +4574,11 @@ supports-color@^7.1.0:
   integrity sha1-aOMlkd9z4lrRxLSRCKLsUHliv9E=
   dependencies:
     has-flag "^4.0.0"
+
+svelte-bulma-components@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.npm.taobao.org/svelte-bulma-components/download/svelte-bulma-components-0.1.5.tgz#ac23941460671917bfe00824c2870318d0a8b2e6"
+  integrity sha1-rCOUFGBnGRe/4AgkwocDGNCosuY=
 
 svelte@3.20.1:
   version "3.20.1"
