@@ -1,18 +1,21 @@
 <script>
-
+  import Tailwindcss from "../components/Tailwindcss.svelte";
 </script>
 
 <style>
-  main {
-    position: relative;
-    max-width: 56em;
-    background-color: white;
-    padding: 2em;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
+
 </style>
 
+<Tailwindcss />
+
 <main>
+
+  <div class="container">
+    <div class="notification">
+      This container is
+      <strong>centered</strong>
+      on desktop.
+    </div>
+  </div>
   <slot />
 </main>
