@@ -42,7 +42,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn type && yarn audit:ci"
+      "pre-commit": "yarn audit:ci"
     }
   },
   "lint-staged": {
@@ -56,7 +56,7 @@
     }
   },
   "scripts": {
-    "dev": "sapper dev",
+    "dev": "HOST=0.0.0.0 sapper dev",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
