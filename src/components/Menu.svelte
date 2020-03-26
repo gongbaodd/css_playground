@@ -55,16 +55,13 @@
 <div class="menu">
   <ul>
     {#each Menu as item}
-      {#if selectedTitle === item.title}
-        <li class="selected">
-          <a href={item.path}>{item.title}</a>
-        </li>
-      {/if}
-    {/each}
-    {#each Menu as item}
       {#if selectedTitle !== item.title}
         <li>
           <a href={item.path} rel="prefetch">{item.title}</a>
+        </li>
+      {:else}
+        <li class="selected">
+          <a href={item.path}>{item.title}</a>
         </li>
       {/if}
     {/each}
