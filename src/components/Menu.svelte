@@ -1,14 +1,21 @@
 <script>
-  const Menu = [
+  import { onMount } from "svelte";
+
+  const HOME = "home";
+
+  export let items = [];
+  export let selected = HOME;
+
+  let Menu = [
     {
       title: "home",
       path: ".",
     },
-    {
-      title: "translucent-borders",
-      path: "translucent-borders",
-    },
   ];
+  $: Menu = [...Menu, ...items];
+
+  let selectedTitle = selected;
+  $: selectedTitle = selected || HOME;
 </script>
 
 <style>
@@ -39,14 +46,27 @@
   .menu > ul > li > a {
     @apply flex-1;
   }
+
+  .selected {
+    @apply font-bold;
+  }
 </style>
 
 <div class="menu">
   <ul>
     {#each Menu as item}
-      <li>
-        <a href={item.path} rel="prefetch">{item.title}</a>
-      </li>
+      {#if selectedTitle === item.title}
+        <li class="selected">
+          <a href={item.path}>{item.title}</a>
+        </li>
+      {/if}
+    {/each}
+    {#each Menu as item}
+      {#if selectedTitle !== item.title}
+        <li>
+          <a href={item.path} rel="prefetch">{item.title}</a>
+        </li>
+      {/if}
     {/each}
   </ul>
 </div>
