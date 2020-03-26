@@ -1,5 +1,5 @@
 <script>
-  const BORDER_STYLE = `
+  let BORDER_STYLE = `
 border: 10px solid hsla(0, 0%, 100%, .5);
 background-clip: padding-box;`;
 </script>
@@ -11,14 +11,30 @@ background-clip: padding-box;`;
     @apply h-full;
   }
 
+  .container > div {
+    @apply m-auto;
+  }
+
   .block {
     @apply h-16;
     @apply w-16;
-    @apply bg-white;
     @apply m-auto;
+    @apply bg-white;
+  }
+
+  textarea {
+    @apply w-64;
+    @apply rounded;
+    @apply mt-4;
+    resize: none;
   }
 </style>
 
 <div class="container">
-  <div class="block" style={BORDER_STYLE} />
+  <div>
+    <div class="playground">
+      <div class="block" style={BORDER_STYLE} />
+    </div>
+    <textarea rows="5" bind:value={BORDER_STYLE} />
+  </div>
 </div>
