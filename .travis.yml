@@ -7,4 +7,3 @@ cache:
   npm: true
   directories:
     - ~/.cache
-    - ./cypress
