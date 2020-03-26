@@ -11,7 +11,6 @@
   </head>
   <body>
     <div id="sapper">%sapper.html%</div>
-    %sapper.scripts%
     <script
       src="//unpkg.com/github-corners@0.1.0/dist/embed.min.js"
       data-href="https://github.com/gongbaodd/css_playground"
@@ -28,5 +27,11 @@
       gtag("js", new Date());
       gtag("config", "UA-159827550-5");
     </script>
+    <script
+      src="https://browser.sentry-cdn.com/5.15.0/bundle.min.js"
+      integrity="sha384-+ysfQckQvwCB5SppH41IScIz/Iynt2pePnJNMl+D7ZOzDJ+VYhQEuwB0pA60IDM0"
+      crossorigin="anonymous"
+    ></script>
+    %sapper.scripts%
   </body>
 </html>
