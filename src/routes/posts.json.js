@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 export async function get(req, res) {
-  const files = fs.readdirSync(path.resolve(__dirname, "../../../src/routes"));
+  const files = fs.readdirSync(path.resolve(process.cwd(), "./src/routes"));
 
   res.writeHead(200, {
     "Content-Type": "application/json",
