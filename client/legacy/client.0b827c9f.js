@@ -3246,12 +3246,12 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/posts.json$/];
 var components = [{
   js: function js() {
-    return import('./index.c6ad4c5f.js');
+    return import('./index.4d42d64a.js');
   },
   css: []
 }, {
   js: function js() {
-    return import('./translucent-borders.59ea3fa4.js');
+    return import('./translucent-borders.103aadc5.js');
   },
   css: []
 }];
@@ -4032,6 +4032,9 @@ function handle_popstate(event) {
   }
 }
 
+Sentry.init({
+  dsn: "https://eb561649e0434bfb83ca2019d8518b8b@sentry.io/5175761"
+});
 start({
   target: document.querySelector("#sapper")
 });
