@@ -78,7 +78,7 @@
     "test": "echo 'no test'",
     "type": "tsc --noEmit",
     "audit:ci": "audit-ci -m  -a 1488 ",
-    "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/gongbaodd/css_playground.git -b master",
+    "deploy": "gh-pages -d __sapper__/export -r https://$GH_TOKEN@github.com/gongbaodd/css_playground.git -b master",
     "commit": "git-cz",
     "es:check": "es-check"
   }
