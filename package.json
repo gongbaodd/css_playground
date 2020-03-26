@@ -5,6 +5,7 @@
   "dependencies": {
     "compression": "1.7.4",
     "polka": "next",
+    "prismjs": "^1.19.0",
     "sirv": "0.4.2"
   },
   "devDependencies": {

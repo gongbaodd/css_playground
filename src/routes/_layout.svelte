@@ -4,12 +4,16 @@
 </script>
 
 <style>
-
+  .content {
+    @apply h-64;
+  }
 </style>
 
 <Tailwindcss />
 
 <main>
+  <section class="content">
+    <slot />
+  </section>
   <Menu />
-  <slot />
 </main>

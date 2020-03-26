@@ -12,11 +12,6 @@
 </script>
 
 <style>
-  .container {
-    @apply flex;
-    @apply items-center;
-    @apply h-screen;
-  }
   .menu {
     @apply w-64;
     @apply m-auto;
@@ -46,14 +41,12 @@
   }
 </style>
 
-<section class="container">
-  <div class="menu">
-    <ul>
-      {#each Menu as item}
-        <li>
-          <a href={item.path} rel="prefetch">{item.title}</a>
-        </li>
-      {/each}
-    </ul>
-  </div>
-</section>
+<div class="menu">
+  <ul>
+    {#each Menu as item}
+      <li>
+        <a href={item.path} rel="prefetch">{item.title}</a>
+      </li>
+    {/each}
+  </ul>
+</div>
