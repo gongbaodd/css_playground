@@ -1,0 +1,1 @@
+import{S as t,i as s,s as e,q as a,d as c,n}from"./client.c3c487c6.js";function o(t){return{c(){this.h()},l(t){a('[data-svelte="svelte-q2dzn7"]',document.head).forEach(c),this.h()},h(){document.title="宫不上 | CSS playground"},m:n,p:n,i:n,o:n,d:n}}export default class extends t{constructor(t){super(),s(this,t,null,o,e,{})}}
