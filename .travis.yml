@@ -1,0 +1,10 @@
+language: node_js
+script:
+  - yarn export
+  - yarn cp:cname
+  - if [ "$TRAVIS_BRANCH" = "build" ]; then yarn deploy; fi
+cache:
+  npm: true
+  directories:
+    - ~/.cache
+    - ./cypress

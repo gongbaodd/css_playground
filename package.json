@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "dependencies": {
     "compression": "1.7.4",
+    "es-check": "^5.1.0",
     "fs": "^0.0.1-security",
     "polka": "next",
     "prismjs": "^1.19.0",
@@ -73,9 +74,12 @@
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
+    "cp:cname": "sh ./scripts/cp_cname.sh",
     "test": "echo 'no test'",
     "type": "tsc --noEmit",
-    "audit:ci": "audit-ci -m",
-    "commit": "git-cz"
+    "audit:ci": "audit-ci -m  -a 1488 ",
+    "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/gongbaodd/css_playground.git -b master",
+    "commit": "git-cz",
+    "es:check": "es-check"
   }
 }
