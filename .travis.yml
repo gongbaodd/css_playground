@@ -2,6 +2,7 @@ language: node_js
 script:
   - yarn export
   - yarn cp:cname
+  - yarn cy:test
   - if [ "$TRAVIS_BRANCH" = "build" ]; then yarn deploy; fi
 
 cache:
