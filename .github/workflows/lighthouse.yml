@@ -9,7 +9,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
-            https://blog.gongbushang.com
+            https://css.gongbushang.com
       - name: Save results
         uses: actions/upload-artifact@v1
         with:
