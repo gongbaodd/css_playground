@@ -14,6 +14,7 @@
     @apply items-center;
     @apply h-full;
     @apply border-0;
+    @apply overflow-hidden;
   }
 
   textarea {
