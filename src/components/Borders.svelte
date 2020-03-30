@@ -13,6 +13,7 @@
     @apply flex;
     @apply items-center;
     @apply h-full;
+    @apply border-0;
   }
 
   textarea {
