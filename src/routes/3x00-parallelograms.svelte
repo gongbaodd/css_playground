@@ -1,4 +1,4 @@
-<style global>
+<style>
   .wrapper {
     display: flex;
     height: 100%;
