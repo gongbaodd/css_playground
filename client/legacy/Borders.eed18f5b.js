@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _classCallCheck, i as init, s as safe_not_equal, b as _assertThisInitialized, d as dispatch_dev, g as _createClass, S as SvelteComponentDev, o as onMount, v as validate_slots, c as _getPrototypeOf, e as _possibleConstructorReturn, h as element, j as claim_element, k as children, f as detach_dev, l as attr_dev, m as add_location, p as insert_dev, r as append_dev, t as set_input_value, u as listen_dev, w as _slicedToArray, n as noop, x as create_component, y as claim_component, z as mount_component, A as transition_in, B as transition_out, C as destroy_component } from './client.0b827c9f.js';
+import { _ as _inherits, a as _classCallCheck, i as init, s as safe_not_equal, b as _assertThisInitialized, d as dispatch_dev, l as _createClass, S as SvelteComponentDev, o as onMount, v as validate_slots, c as _getPrototypeOf, e as _possibleConstructorReturn, p as element, r as claim_element, u as children, f as detach_dev, w as attr_dev, x as add_location, y as insert_dev, z as append_dev, A as set_input_value, B as listen_dev, C as _slicedToArray, n as noop } from './client.8b67df15.js';
 
 function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -30,14 +30,14 @@ function create_fragment(ctx) {
       this.h();
     },
     h: function hydrate() {
-      attr_dev(textarea, "class", "block svelte-v20xe1");
+      attr_dev(textarea, "class", "block svelte-1wuoern");
       attr_dev(textarea, "style",
       /*stylecontent*/
       ctx[0]);
       attr_dev(textarea, "rows", "5");
-      add_location(textarea, file, 31, 2, 1180);
-      attr_dev(div, "class", "border svelte-v20xe1");
-      add_location(div, file, 30, 0, 1157);
+      add_location(textarea, file, 33, 2, 1315);
+      attr_dev(div, "class", "border svelte-1wuoern");
+      add_location(div, file, 32, 0, 1292);
     },
     m: function mount(target, anchor, remount) {
       insert_dev(target, div, anchor);
@@ -176,106 +176,4 @@ var Borders = /*#__PURE__*/function (_SvelteComponentDev) {
   return Borders;
 }(SvelteComponentDev);
 
-function _createSuper$1(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct$1()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _isNativeReflectConstruct$1() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function create_fragment$1(ctx) {
-  var current;
-  var border = new Borders({
-    props: {
-      style:
-      /*BORDER_STYLE*/
-      ctx[0]
-    },
-    $$inline: true
-  });
-  var block = {
-    c: function create() {
-      create_component(border.$$.fragment);
-    },
-    l: function claim(nodes) {
-      claim_component(border.$$.fragment, nodes);
-    },
-    m: function mount(target, anchor) {
-      mount_component(border, target, anchor);
-      current = true;
-    },
-    p: noop,
-    i: function intro(local) {
-      if (current) return;
-      transition_in(border.$$.fragment, local);
-      current = true;
-    },
-    o: function outro(local) {
-      transition_out(border.$$.fragment, local);
-      current = false;
-    },
-    d: function destroy(detaching) {
-      destroy_component(border, detaching);
-    }
-  };
-  dispatch_dev("SvelteRegisterBlock", {
-    block: block,
-    id: create_fragment$1.name,
-    type: "component",
-    source: "",
-    ctx: ctx
-  });
-  return block;
-}
-
-function instance$1($$self, $$props, $$invalidate) {
-  var BORDER_STYLE = ["border: 10px solid hsla(0, 0%, 100%, .5);", "background-clip: padding-box;"].join("");
-  var writable_props = [];
-  Object.keys($$props).forEach(function (key) {
-    if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn("<Translucent_borders> was created with unknown prop '".concat(key, "'"));
-  });
-  var _$$props$$$slots = $$props.$$slots,
-      $$slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
-      $$scope = $$props.$$scope;
-  validate_slots("Translucent_borders", $$slots, []);
-
-  $$self.$capture_state = function () {
-    return {
-      Border: Borders,
-      BORDER_STYLE: BORDER_STYLE
-    };
-  };
-
-  $$self.$inject_state = function ($$props) {
-    if ("BORDER_STYLE" in $$props) $$invalidate(0, BORDER_STYLE = $$props.BORDER_STYLE);
-  };
-
-  if ($$props && "$$inject" in $$props) {
-    $$self.$inject_state($$props.$$inject);
-  }
-
-  return [BORDER_STYLE];
-}
-
-var Translucent_borders = /*#__PURE__*/function (_SvelteComponentDev) {
-  _inherits(Translucent_borders, _SvelteComponentDev);
-
-  var _super = _createSuper$1(Translucent_borders);
-
-  function Translucent_borders(options) {
-    var _this;
-
-    _classCallCheck(this, Translucent_borders);
-
-    _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$1, create_fragment$1, safe_not_equal, {});
-    dispatch_dev("SvelteRegisterComponent", {
-      component: _assertThisInitialized(_this),
-      tagName: "Translucent_borders",
-      options: options,
-      id: create_fragment$1.name
-    });
-    return _this;
-  }
-
-  return Translucent_borders;
-}(SvelteComponentDev);
-
-export default Translucent_borders;
+export { Borders as B };

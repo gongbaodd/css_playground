@@ -3246,12 +3246,112 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/posts.json$/];
 var components = [{
   js: function js() {
-    return import('./index.4d42d64a.js');
+    return import('./index.4a0a0399.js');
   },
   css: []
 }, {
   js: function js() {
-    return import('./translucent-borders.103aadc5.js');
+    return import('./2x03-vintage-envelope-border-image.5474565c.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./2x01-continouse-image-border.c3f55ec8.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./0x02-extended-position-bg.50c429cf.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./0x00-translucent-borders.c870541c.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./1x00-horizontal-stripes.5c035a0d.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./1x03-diagnal-60-stripes.29bb5593.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./0x03-background-origin.11fa43ac.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./0x01-multiple-borders.a045c277.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./1x01-vertical-stripes.52265d48.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./1x07-checkerboard-svg.a4f30dac.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./2x02-vintage-envelope.bd13d332.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./0x04-background-calc.b2081361.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./1x02-diagnal-stripes.52117814.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./0x05-inner-rounding.62c1af02.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./3x00-parallelograms.d64fb9e1.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./1x06-checkerboard.741222bf.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./2x00-border-image.d49a4997.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./1x04-blueprint.814a2924.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./2x04-ant-match.71a860bc.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./3x01-diamond.7e64f5fa.js');
+  },
+  css: []
+}, {
+  js: function js() {
+    return import('./1x05-polka.39894fa7.js');
   },
   css: []
 }];
@@ -3262,10 +3362,130 @@ var routes = [{
     i: 0
   }]
 }, {
-  // translucent-borders.svelte
-  pattern: /^\/translucent-borders\/?$/,
+  // 2x03-vintage-envelope-border-image.svelte
+  pattern: /^\/2x03-vintage-envelope-border-image\/?$/,
   parts: [{
     i: 1
+  }]
+}, {
+  // 2x01-continouse-image-border.svelte
+  pattern: /^\/2x01-continouse-image-border\/?$/,
+  parts: [{
+    i: 2
+  }]
+}, {
+  // 0x02-extended-position-bg.svelte
+  pattern: /^\/0x02-extended-position-bg\/?$/,
+  parts: [{
+    i: 3
+  }]
+}, {
+  // 0x00-translucent-borders.svelte
+  pattern: /^\/0x00-translucent-borders\/?$/,
+  parts: [{
+    i: 4
+  }]
+}, {
+  // 1x00-horizontal-stripes.svelte
+  pattern: /^\/1x00-horizontal-stripes\/?$/,
+  parts: [{
+    i: 5
+  }]
+}, {
+  // 1x03-diagnal-60-stripes.svelte
+  pattern: /^\/1x03-diagnal-60-stripes\/?$/,
+  parts: [{
+    i: 6
+  }]
+}, {
+  // 0x03-background-origin.svelte
+  pattern: /^\/0x03-background-origin\/?$/,
+  parts: [{
+    i: 7
+  }]
+}, {
+  // 0x01-multiple-borders.svelte
+  pattern: /^\/0x01-multiple-borders\/?$/,
+  parts: [{
+    i: 8
+  }]
+}, {
+  // 1x01-vertical-stripes.svelte
+  pattern: /^\/1x01-vertical-stripes\/?$/,
+  parts: [{
+    i: 9
+  }]
+}, {
+  // 1x07-checkerboard-svg.svelte
+  pattern: /^\/1x07-checkerboard-svg\/?$/,
+  parts: [{
+    i: 10
+  }]
+}, {
+  // 2x02-vintage-envelope.svelte
+  pattern: /^\/2x02-vintage-envelope\/?$/,
+  parts: [{
+    i: 11
+  }]
+}, {
+  // 0x04-background-calc.svelte
+  pattern: /^\/0x04-background-calc\/?$/,
+  parts: [{
+    i: 12
+  }]
+}, {
+  // 1x02-diagnal-stripes.svelte
+  pattern: /^\/1x02-diagnal-stripes\/?$/,
+  parts: [{
+    i: 13
+  }]
+}, {
+  // 0x05-inner-rounding.svelte
+  pattern: /^\/0x05-inner-rounding\/?$/,
+  parts: [{
+    i: 14
+  }]
+}, {
+  // 3x00-parallelograms.svelte
+  pattern: /^\/3x00-parallelograms\/?$/,
+  parts: [{
+    i: 15
+  }]
+}, {
+  // 1x06-checkerboard.svelte
+  pattern: /^\/1x06-checkerboard\/?$/,
+  parts: [{
+    i: 16
+  }]
+}, {
+  // 2x00-border-image.svelte
+  pattern: /^\/2x00-border-image\/?$/,
+  parts: [{
+    i: 17
+  }]
+}, {
+  // 1x04-blueprint.svelte
+  pattern: /^\/1x04-blueprint\/?$/,
+  parts: [{
+    i: 18
+  }]
+}, {
+  // 2x04-ant-match.svelte
+  pattern: /^\/2x04-ant-match\/?$/,
+  parts: [{
+    i: 19
+  }]
+}, {
+  // 3x01-diamond.svelte
+  pattern: /^\/3x01-diamond\/?$/,
+  parts: [{
+    i: 20
+  }]
+}, {
+  // 1x05-polka.svelte
+  pattern: /^\/1x05-polka\/?$/,
+  parts: [{
+    i: 21
   }]
 }];
 
@@ -4039,4 +4259,4 @@ start({
   target: document.querySelector("#sapper")
 });
 
-export { transition_in as A, transition_out as B, destroy_component as C, SvelteComponentDev as S, _inherits as _, _classCallCheck as a, _assertThisInitialized as b, _getPrototypeOf as c, dispatch_dev as d, _possibleConstructorReturn as e, detach_dev as f, _createClass as g, element as h, init as i, claim_element as j, children as k, attr_dev as l, add_location as m, noop as n, onMount as o, insert_dev as p, query_selector_all as q, append_dev as r, safe_not_equal as s, set_input_value as t, listen_dev as u, validate_slots as v, _slicedToArray as w, create_component as x, claim_component as y, mount_component as z };
+export { set_input_value as A, listen_dev as B, _slicedToArray as C, space as D, claim_space as E, text as F, claim_text as G, SvelteComponentDev as S, _inherits as _, _classCallCheck as a, _assertThisInitialized as b, _getPrototypeOf as c, dispatch_dev as d, _possibleConstructorReturn as e, detach_dev as f, create_component as g, claim_component as h, init as i, transition_out as j, destroy_component as k, _createClass as l, mount_component as m, noop as n, onMount as o, element as p, query_selector_all as q, claim_element as r, safe_not_equal as s, transition_in as t, children as u, validate_slots as v, attr_dev as w, add_location as x, insert_dev as y, append_dev as z };
