@@ -7,7 +7,7 @@
     "es-check": "5.1.0",
     "fs": "0.0.1-security",
     "polka": "next",
-    "prismjs": "1.19.0",
+    "prismjs": "1.27.0",
     "sirv": "0.4.2"
   },
   "devDependencies": {
